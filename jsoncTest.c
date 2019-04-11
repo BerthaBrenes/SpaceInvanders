@@ -90,34 +90,81 @@ int main(int argc, char **argv) {
 	
 	FILE *fp;
 	char buffer[1024];
-	struct json_object *name;
+
+	struct json_object *jobjf;
 	struct json_object *valueX;
 	struct json_object *valueY;
 	struct json_object *vidas;
 	struct json_object *vivo;
-	struct json_object *jobj;
+	
 
 	fp = fopen("test.json","r");
 	fread(buffer, 1024, 1, fp);
 	fclose(fp);
 	printf("JSON string: %sn", buffer);
 	
-  	jobj = json_tokener_parse(buffer);
+  	jobjf = json_tokener_parse(buffer);
+	  crearJson();
 	  	
-	json_object_object_get_ex(jobj, "posxJuga", &valueX);
-	json_object_object_get_ex(jobj, "posyJuga", &valueY);
-	json_object_object_get_ex(jobj, "vidasJuga", &vidas);
-	json_object_object_get_ex(jobj, "vivoJuga", &vivo);
-	printf("PosX de Jugador: %s\n", json_object_get_int(valueX));
-	printf("PosY de Jugador: %d\n", json_object_get_int(valueY));
-	printf("Vidas de Jugador: %d\n", json_object_get_int(vidas));
-	printf("Vivo de Jugador: %s\n", json_object_get_boolean(vivo)? "true": "false");
+	//json_object_object_get_ex(jobjf, "posxJuga", &valueX);
+	// json_object_object_get_ex(jobj, "posyJuga", &valueY);
+	// json_object_object_get_ex(jobj, "vidasJuga", &vidas);
+	// json_object_object_get_ex(jobj, "vivoJuga", &vivo);
+	//printf("PosX de Jugador: %s\n", json_object_get_int(valueX));
+	
+	// printf("PosY de Jugador: %d\n", json_object_get_int(valueY));
+	// printf("Vidas de Jugador: %d\n", json_object_get_int(vidas));
+	// printf("Vivo de Jugador: %s\n", json_object_get_boolean(vivo)? "true": "false");
 	// json_jugadores_parser(jobj);
 	// json_calamar_parser(jobj);
 	// json_cangrejo_parser(jobj);
 	// json_pulpo_parser(jobj);
 	//json_parse(jobj);
    	
+}
+void crearJson(){
+	FILE *fp;
+
+   fp = fopen("test.json", "w+");
+	json_object * jobj = json_object_new_object();
+
+  /*Creating a json string*/
+  json_object *jstring = json_object_new_string("Joys of Programming");
+
+  /*Creating a json integer*/
+  json_object *jint = json_object_new_int(10);
+
+  /*Creating a json boolean*/
+  json_object *jboolean = json_object_new_boolean(1);
+
+  /*Creating a json double*/
+  json_object *jdouble = json_object_new_double(2.14);
+
+  /*Creating a json array*/
+  json_object *jarray = json_object_new_array();
+
+  /*Creating json strings*/
+  json_object *jstring1 = json_object_new_string("c");
+  json_object *jstring2 = json_object_new_string("c++");
+  json_object *jstring3 = json_object_new_string("php");
+
+  /*Adding the above created json strings to the array*/
+  json_object_array_add(jarray,jstring1);
+  json_object_array_add(jarray,jstring2);
+  json_object_array_add(jarray,jstring3);
+
+  /*Form the json object*/
+  /*Each of these is like a key value pair*/
+  json_object_object_add(jobj,"Site Name", jstring);
+  json_object_object_add(jobj,"Technical blog", jboolean);
+  json_object_object_add(jobj,"Average posts per day", jdouble);
+  json_object_object_add(jobj,"Number of posts", jint);
+  json_object_object_add(jobj,"Categories", jarray);
+
+  /*Now printing the json object*/
+  printf ("The json object created: %sn",json_object_to_json_string(jobj));
+   fputs(json_object_to_json_string(jobj), fp);
+   fclose(fp);
 }
 void json_jugadores_parser(json_object *jobj){
 	struct json_object *name;

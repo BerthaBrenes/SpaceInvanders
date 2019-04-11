@@ -1,6 +1,1 @@
-{
-    "posxJuga":2,
-    "posyJuga":30,
-    "vidasJuga":15,
-    "vivoJuga":true
-}
+{ "Site Name": "Joys of Programming", "Technical blog": true, "Average posts per day": 2.1400000000000001, "Number of posts": 10, "Categories": [ "c", "c++", "php" ] }
