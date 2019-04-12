@@ -105,8 +105,8 @@ void inicializar(struct Jugador *ju, struct Enemigos *e, struct Balas *b, struct
     ju->vidas = 3;
     ju->vivo = true;
     b->vivo = false;
-    reiniciarEnemigos(&e);
-    colocarEscudos(&esc);
+    reiniciarEnemigos(e);
+    colocarEscudos(esc);
 }
 
 void reiniciarEnemigos(struct Enemigos *e){
@@ -156,7 +156,7 @@ void reiniciarEnemigos(struct Enemigos *e){
 void colocarEscudos(struct Escudo *esc[]){
     for(int i = 0; i < 4; i++)
     {
-        colocarSeccionesEscudo(3+3*i,&esc[i]);
+        colocarSeccionesEscudo(3+3*i,esc[i]);
     }
 }
 
@@ -289,7 +289,7 @@ void leDispare(struct Enemigos *e, struct Balas *b){
 void debilitarEscudo(struct Escudo *esc[], struct Misil *m){
     for(int i = 0; i < 4; i++)
     {
-        debilitarSeccionEscudo(&esc[i],&m);
+        debilitarSeccionEscudo(esc[i],m);
     }
     
 }
