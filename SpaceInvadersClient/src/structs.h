@@ -7,8 +7,6 @@ struct App
 {
     SDL_Renderer *renderer;
     SDL_Window *window;
-    int message;
-    int gameOver;
 };
 
 struct GUI_Item

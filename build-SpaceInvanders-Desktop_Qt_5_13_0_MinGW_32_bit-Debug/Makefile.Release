@@ -50,26 +50,22 @@ OBJECTS_DIR   = release
 SOURCES       = ..\SpaceInvadersClient\src\main.c \
 		..\SpaceInvadersClient\src\draw.c \
 		..\SpaceInvadersClient\src\client.c \
-		..\SpaceInvadersClient\src\init.c \
-		..\SpaceInvadersClient\src\input.c 
+		..\SpaceInvadersClient\src\init.c 
 OBJECTS       = release/main.o \
 		release/draw.o \
 		release/client.o \
-		release/init.o \
-		release/input.o
+		release/init.o
 
 DIST          =  src/draw.h \
 		src/common.h \
 		src/init.h \
-		src/input.h \
 		src/main.h \
 		src/structs.h \
 		src/defs.h \
 		src/client.h ..\SpaceInvadersClient\src\main.c \
 		..\SpaceInvadersClient\src\draw.c \
 		..\SpaceInvadersClient\src\client.c \
-		..\SpaceInvadersClient\src\init.c \
-		..\SpaceInvadersClient\src\input.c
+		..\SpaceInvadersClient\src\init.c
 QMAKE_TARGET  = SpaceInvanders
 DESTDIR        = release\ #avoid trailing-slash linebreak
 TARGET         = SpaceInvanders.exe
@@ -92,7 +88,7 @@ dist:
 	$(ZIP) SpaceInvanders.zip $(SOURCES) $(DIST) ..\SpaceInvadersClient\SpaceInvanders.pro D:\Qt\5.13.0\mingw73_32\mkspecs\features\spec_pre.prf D:\Qt\5.13.0\mingw73_32\mkspecs\qdevice.pri D:\Qt\5.13.0\mingw73_32\mkspecs\features\device_config.prf D:\Qt\5.13.0\mingw73_32\mkspecs\common\sanitize.conf D:\Qt\5.13.0\mingw73_32\mkspecs\common\gcc-base.conf D:\Qt\5.13.0\mingw73_32\mkspecs\common\g++-base.conf D:\Qt\5.13.0\mingw73_32\mkspecs\common\angle.conf D:\Qt\5.13.0\mingw73_32\mkspecs\common\windows-vulkan.conf D:\Qt\5.13.0\mingw73_32\mkspecs\common\g++-win32.conf D:\Qt\5.13.0\mingw73_32\mkspecs\common\windows-desktop.conf D:\Qt\5.13.0\mingw73_32\mkspecs\qconfig.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3danimation.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3danimation_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dcore.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dcore_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dextras.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dextras_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dinput.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dinput_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dlogic.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dlogic_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquick.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquick_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickanimation.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickanimation_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickextras.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickextras_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickinput.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickinput_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickrender.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickrender_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickscene2d.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3dquickscene2d_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3drender.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_3drender_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_accessibility_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_axbase.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_axbase_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_axcontainer.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_axcontainer_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_axserver.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_axserver_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_bluetooth.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_bluetooth_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_bodymovin_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_bootstrap_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_charts.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_charts_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_concurrent.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_concurrent_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_core.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_core_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_datavisualization.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_datavisualization_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_dbus.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_dbus_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_designer.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_designer_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_designercomponents_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_devicediscovery_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_edid_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_egl_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_fb_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_fontdatabase_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_gamepad.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_gamepad_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_gui.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_gui_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_help.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_help_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_location.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_location_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_multimedia.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_multimedia_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_multimediawidgets.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_network.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_network_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_networkauth.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_networkauth_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_nfc.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_nfc_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_opengl.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_opengl_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_openglextensions.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_openglextensions_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_packetprotocol_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_platformcompositor_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_positioning.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_positioning_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_positioningquick.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_positioningquick_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_printsupport.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_printsupport_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_purchasing.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_purchasing_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_qml.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_qml_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_qmldebug_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_qmldevtools_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_qmltest.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_qmltest_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quick.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quick_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quickcontrols2.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quickcontrols2_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quickparticles_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quickshapes_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quicktemplates2.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quicktemplates2_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quickwidgets.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_quickwidgets_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_remoteobjects.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_remoteobjects_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_repparser.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_repparser_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_script.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_script_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_scripttools.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_scripttools_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_scxml.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_scxml_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_sensors.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_sensors_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_serialbus.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_serialbus_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_serialport.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_serialport_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_sql.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_sql_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_svg.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_svg_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_testlib.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_testlib_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_texttospeech.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_texttospeech_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_theme_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_uiplugin.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_uitools.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_uitools_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_virtualkeyboard.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_virtualkeyboard_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_webchannel.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_webchannel_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_websockets.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_websockets_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_widgets.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_widgets_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_winextras.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_winextras_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_xml.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_xml_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_xmlpatterns.pri D:\Qt\5.13.0\mingw73_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri D:\Qt\5.13.0\mingw73_32\mkspecs\features\qt_functions.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\qt_config.prf D:\Qt\5.13.0\mingw73_32\mkspecs\win32-g++\qmake.conf D:\Qt\5.13.0\mingw73_32\mkspecs\features\spec_post.prf .qmake.stash D:\Qt\5.13.0\mingw73_32\mkspecs\features\exclusive_builds.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\toolchain.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\default_pre.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\win32\default_pre.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\resolve_config.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\exclusive_builds_post.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\default_post.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\build_pass.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\win32\console.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\qml_debug.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\precompile_header.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\warn_on.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\qmake_use.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\file_copies.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\testcase_targets.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\exceptions.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\yacc.prf D:\Qt\5.13.0\mingw73_32\mkspecs\features\lex.prf ..\SpaceInvadersClient\SpaceInvanders.pro      
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\main.o release\draw.o release\client.o release\init.o release\input.o
+	-$(DEL_FILE) release\main.o release\draw.o release\client.o release\init.o
 
 distclean: clean 
 	-$(DEL_FILE) .qmake.stash
@@ -324,58 +320,6 @@ release/init.o: ../SpaceInvadersClient/src/init.c ../SpaceInvadersClient/src/ini
 		../SpaceInvadersClient/src/defs.h \
 		../SpaceInvadersClient/src/structs.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o release\init.o ..\SpaceInvadersClient\src\init.c
-
-release/input.o: ../SpaceInvadersClient/src/input.c ../SpaceInvadersClient/src/input.h \
-		../SpaceInvadersClient/src/common.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_main.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_stdinc.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_config.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_platform.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/begin_code.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/close_code.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_assert.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_atomic.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_audio.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_error.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_endian.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_mutex.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_thread.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_rwops.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_clipboard.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_cpuinfo.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_events.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_video.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_pixels.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_rect.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_surface.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_blendmode.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_keyboard.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_keycode.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_scancode.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_mouse.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_joystick.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_gamecontroller.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_quit.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_gesture.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_touch.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_filesystem.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_haptic.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_hints.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_loadso.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_log.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_messagebox.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_power.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_render.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_sensor.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_shape.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_system.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_timer.h \
-		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_version.h \
-		../SpaceInvadersClient/SDL2_image-2.0.4/i686-w64-mingw32/include/SDL2/SDL_image.h \
-		../SpaceInvadersClient/src/defs.h \
-		../SpaceInvadersClient/src/structs.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\input.o ..\SpaceInvadersClient\src\input.c
 
 ####### Install
 

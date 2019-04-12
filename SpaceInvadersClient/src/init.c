@@ -21,10 +21,6 @@ void initSDL(void)
     app.renderer = SDL_CreateRenderer(app.window, -1, SDL_RENDERER_ACCELERATED);
 	
     IMG_Init(IMG_INIT_PNG | IMG_INIT_JPG);
-
-    app.gameOver = FALSE;
-
-    app.message = NONE;
 }
 
 void cleanup(void)

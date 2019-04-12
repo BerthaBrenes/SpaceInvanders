@@ -23,5 +23,4 @@ void doInput(void)
                 app.message = NONE;
         }
     }
-
 }

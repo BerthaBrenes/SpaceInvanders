@@ -6,7 +6,7 @@
 #define FALSE 0
 #define MS 10
 
-#define PORT 8080
+#define PORT 8002
 
 //Messages
 #define NONE 0

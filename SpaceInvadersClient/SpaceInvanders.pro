@@ -27,8 +27,7 @@ SOURCES += \
         src/client.c
 SOURCES += \
         src/init.c
-SOURCES += \
-        src/input.c
+SOURCES +=
 
 SOURCES +=
 HEADERS += \
@@ -37,8 +36,7 @@ HEADERS += \
         src/common.h
 HEADERS += \
         src/init.h
-HEADERS += \
-        src/input.h
+HEADERS +=
 HEADERS += \
         src/main.h
 HEADERS += \
