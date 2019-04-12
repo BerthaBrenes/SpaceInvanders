@@ -1,15 +1,22 @@
-//#include <sys/socket.h>
-#include <stdlib.h>
-//#include <netinet/in.h>
-#include <string.h>
+#include <winsock2.h>
+#include <stdio.h>
 #include "common.h"
 
-#define PORT 8080
+// Need to link with Ws2_32.lib, Mswsock.lib, and Advapi32.lib
+//#pragma comment (lib, "Ws2_32.lib")
+//#pragma comment (lib, "Mswsock.lib")
+//#pragma comment (lib, "AdvApi32.lib")
 
-#define ScreenRange 50
+#define DEFAULT_BUFLEN 512
+#define DEFAULT_PORT "27015"
+
+int sock = 0, valread;
+struct sockaddr_in serv_addr;
+char *hello = "Hello from client";
+char buffer[1024] = {0};
+extern App app;
 
 void TryFunctionXD(void);
 GUI_Item CreateItem(enum objeto name,int posX,int posY);
-void recieveMessage(void);
-void sendMessage(void);
+int conexionCliente(int argc, char **argv);
 

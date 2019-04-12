@@ -3,6 +3,9 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
+LIBS += -lws2_32
+LIBS += -lMswsock
+LIBS += -lAdvApi32
 
 INCLUDEPATH += $$PWD/SDL2-2.0.9/i686-w64-mingw32/include/SDL2
 LIBS += -L$$PWD/SDL2-2.0.9/i686-w64-mingw32/lib

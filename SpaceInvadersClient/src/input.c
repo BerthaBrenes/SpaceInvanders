@@ -20,7 +20,7 @@ void doInput(void)
                 app.message = LEFT;
             }
         else{
-                app.message = 0;
+                app.message = NONE;
         }
     }
 

@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main()
+int main(int argc, char **argv)
 {
 	memset(&app, 0, sizeof(App));
 	
@@ -13,6 +13,8 @@ int main()
 	{
 		prepareScene();
 		
+        conexionCliente(argc,argv);
+
 		doInput();
 		
         TryFunctionXD();
