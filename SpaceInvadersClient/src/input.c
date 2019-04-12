@@ -7,20 +7,20 @@ void doInput(void)
     if (SDL_PollEvent(&event)){
         typeEvent = event.type;
         if (typeEvent == SDL_QUIT)
-            gameOver = TRUE;
+            app.gameOver = TRUE;
         //KEYS
         else if(typeEvent == SDL_KEYDOWN){
             if (keys[SDL_SCANCODE_ESCAPE])
-                gameOver = TRUE;
+                app.gameOver = TRUE;
             if (keys[SDL_SCANCODE_SPACE])
-                message = 1;
+                app.message = SHOOT;
             if (keys[SDL_SCANCODE_D] || keys[SDL_SCANCODE_RIGHT])
-                message = 2;
+                app.message = RIGHT;
             if (keys[SDL_SCANCODE_A] || keys[SDL_SCANCODE_LEFT])
-                message = 3;
+                app.message = LEFT;
             }
         else{
-                message = 0;
+                app.message = 0;
         }
     }
 

@@ -1,12 +1,5 @@
 #include "client.h"
 
-//Enum
-enum objeto{Jugador,Bala,Bunker,Calamar,Pulpo,Cangrejo};
-
-//Funciones
-GUI_Item CreateItem(enum objeto name,int posX,int posY);
-void TryFunctionXD(void);
-
 GUI_Item CreateItem(enum objeto name,int posX,int posY){
     GUI_Item item;
     //memset(&item, 0, sizeof(GUI_Item));
@@ -32,9 +25,6 @@ GUI_Item CreateItem(enum objeto name,int posX,int posY){
     if (item.image == NULL){
         printf("%s",SDL_GetError());
     }
-
-
-
     return item;
 }
 void TryFunctionXD(){
@@ -59,6 +49,13 @@ void TryFunctionXD(){
     blit(pulpo.image,pulpo.posX,pulpo.posY);
     blit(cangrejo.image,cangrejo.posX,cangrejo.posY);
 }
+void recieveMessage(void){
+
+}
+void sendMessage(void){
+
+}
+
 /*
 int sockets(){
     struct sockaddr_in address;

@@ -2,7 +2,6 @@
 
 int main()
 {
-    gameOver = FALSE;
 	memset(&app, 0, sizeof(App));
 	
 	initSDL();
@@ -10,7 +9,7 @@ int main()
 	atexit(cleanup);
 
 
-    while (!gameOver)
+    while (!app.gameOver)
 	{
 		prepareScene();
 		

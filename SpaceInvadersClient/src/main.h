@@ -7,5 +7,3 @@ extern void presentScene(void);
 extern void FuctionTryXD(void);
 
 App app;
-int message;
-int gameOver;

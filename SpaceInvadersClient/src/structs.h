@@ -7,6 +7,8 @@ struct App
 {
     SDL_Renderer *renderer;
     SDL_Window *window;
+    int message;
+    int gameOver;
 };
 
 struct GUI_Item
@@ -15,3 +17,7 @@ struct GUI_Item
     int posX;
     int posY;
 };
+//Enum
+enum objeto{Jugador,Bala,Bunker,Calamar,Pulpo,Cangrejo};
+
+
