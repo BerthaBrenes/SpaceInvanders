@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 int main(int argc, char **argv)
 {
 	memset(&app, 0, sizeof(App));
@@ -11,13 +12,14 @@ int main(int argc, char **argv)
     const unsigned char *keys;
     SDL_Event event;
     int typeEvent;
-    int gameOver = FALSE;
-    int message = NONE;
+    char* gameOver = FALSE;
+    char* message = "0";
+
     while (!gameOver)
 	{
 		prepareScene();
 		
-        conexionCliente(argc,argv);
+        conexionCliente(message, argc,argv);
 
         if (SDL_PollEvent(&event)){
             typeEvent = event.type;
@@ -39,7 +41,7 @@ int main(int argc, char **argv)
             }
         }
 		
-        TryFunctionXD();
+        //TryFunctionXD();
 
 		presentScene();
 		

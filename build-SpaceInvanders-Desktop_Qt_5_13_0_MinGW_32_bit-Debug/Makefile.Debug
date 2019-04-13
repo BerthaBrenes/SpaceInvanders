@@ -162,7 +162,8 @@ debug/main.o: ../SpaceInvadersClient/src/main.c ../SpaceInvadersClient/src/main.
 		../SpaceInvadersClient/SDL2-2.0.9/i686-w64-mingw32/include/SDL2/SDL_version.h \
 		../SpaceInvadersClient/SDL2_image-2.0.4/i686-w64-mingw32/include/SDL2/SDL_image.h \
 		../SpaceInvadersClient/src/defs.h \
-		../SpaceInvadersClient/src/structs.h
+		../SpaceInvadersClient/src/structs.h \
+		../SpaceInvadersClient/src/logica.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o debug\main.o ..\SpaceInvadersClient\src\main.c
 
 debug/draw.o: ../SpaceInvadersClient/src/draw.c ../SpaceInvadersClient/src/draw.h \

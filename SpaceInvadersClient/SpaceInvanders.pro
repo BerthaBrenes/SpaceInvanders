@@ -21,6 +21,7 @@ DEFINES += SLD_MAIN_HANDLED
 
 SOURCES += \
         src/main.c
+SOURCES +=
 SOURCES += \
         src/draw.c
 SOURCES += \

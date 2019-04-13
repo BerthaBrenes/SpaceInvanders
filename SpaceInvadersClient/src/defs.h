@@ -6,10 +6,10 @@
 #define FALSE 0
 #define MS 10
 
-#define PORT 8002
+#define PORT 4997
 
 //Messages
-#define NONE 0
-#define SHOOT 1
-#define RIGHT 2
-#define LEFT 3
+#define NONE "0"
+#define SHOOT "1"
+#define RIGHT "2"
+#define LEFT "3"
