@@ -115,7 +115,7 @@ int conexionCliente(char* message, int argc, char **argv)
 
         // default to localhost
 
-        char *server_name= "192.168.1.22";
+        char *server_name= "localhost";
 
         unsigned short port = DEFAULT_PORT;
 
